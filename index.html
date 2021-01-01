@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Responsive Mega Menu | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="#"><img src="snowbirds/images/Logo.bmp" alt="logo"></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Products</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Products</label>
+            <div class="mega-box"> <!--this mega box is the product list of this shop-->
+              <div class="content">
+                <!-- <div class="row">
+                  <img src="img.jpg" alt=""> 
+                </div> -->
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">HVAC/R tools</a></li>
+                    <li><a href="#">Recovery units and Vacuum pumps</a></li>
+                    <li><a href="#">Air - Conditioning Accessories</a></li>
+                    <li><a href="#">Refrigeration Hardwares</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Refrigerants and Oils</a></li>
+                    <li><a href="#">Compressors and Accessories</a></li>
+                    <li><a href="#">Driers and Filters</a></li>
+                    <li><a href="#">Tube and fittings</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Axial Fans, Motors and Pumps</a></li>
+                    <li><a href="#">Condensing Units</a></li>
+                    <li><a href="#">Mechanical and Electrical Controls</a></li>
+                    <li><a href="#">Electrical Accessories</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-links">
+                    <li><a href="#">Heat Exchangers</a></li>
+                    <li><a href="#">Flow Controls and Valves</a></li>
+                    <li><a href="#">Unit Coolers</a></li>
+                    <li><a href="#">Split Air conditioners and Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="desktop-item">Profile</a>
+            <input type="checkbox" id="showDrop">
+            <label for="showDrop" class="mobile-item">Profile</label>
+            <ul class="drop-menu">
+              <li><a href="#">Job Vacancies</a></li>
+              <li><a href="#">Profile 2</a></li>
+              <li><a href="#">Profile 3</a></li>
+              <li><a href="#">Promotions</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+    </nav>
+  </header>
+  
+  <div style="height: 80%;">
+    <div class="body-text">
+      <div class="title">SNOWBIRDS</div>
+      <div class="sub-title">HVAC systems & Spares</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content">
+          <p>CodinNepal is a YouTube channel where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript and jquery tutorial and related so on.</p>
+          <div class="social">
+            <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+            <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Birendranagar, Surkhet</span>
+            </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+089-765432100</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">abc@example.com</span>
+          </div>
+        </div>
+      </div>
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">
+                  Email *
+                </div>
+                  <input type="email" required>
+          
+                <div class="msg">
+                  <div class="text">
+                    Message *
+                  </div>
+                  <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                  <changeit id=".msgForm" rows="2" cols="25" required></changeit> <!-- replace this changeit name to textarea -->
+                  <br />
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                  <div class="bottom">
+                    <center>
+                      <span class="credit">Created By <a href="https://youtube.com/c/codingnepal">CodingNepal</a> | </span>
+                      <span class="far fa-copyright"></span> 2020 All rights reserved.
+                    </center>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </footer>
+
+</body>
+</html>
