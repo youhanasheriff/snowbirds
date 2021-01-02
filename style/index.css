@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
 }
 body{
   height: 1000px;
@@ -345,16 +345,20 @@ footer{   /*footer position and so on.*/
 .left .content p{
   text-align: justify;
 }
-.left .content .social{
+/* .left .content .social{
   margin: 20px 0 0 0;
 }
-.left .content .social a{
-  padding: 0 2px;
-}
+.left .content .social {
+  padding: 0 1em 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+} */
+/* this is where the font awsome buttons settings */
 .left .content .social a span{
   height: 40px;
   width: 40px;
-  background: #1a1a1a;
+  background: #39427B; /* logo blue color */
+  color: #9e9b9b; /* light grey white color */
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -362,11 +366,12 @@ footer{   /*footer position and so on.*/
   transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background: #39427B;
+  background: #182470;
 }
 .center .content .fas{
   font-size: 1.4375rem;
-  background: #39427B;
+  background: #39427B; /* logo blue color */
+  color: #9e9b9b; /* light grey white color */
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -385,6 +390,10 @@ footer{   /*footer position and so on.*/
 }
 .center .content .phone{
   margin: 15px 0;
+}
+.content div a{
+  text-decoration: none;
+  color: black;
 }
 .right form .text{
   font-size: 1.0625rem;

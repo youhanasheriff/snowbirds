@@ -10,16 +10,12 @@ require_once './vendor/autoload.php';
 
 use FormGuide\Handlx\FormHandler;
 
-
 $pp = new FormHandler(); 
 
 $validator = $pp->getValidator();
 $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('comments')->maxLength(6000);
-
-
-
 
 $pp->sendEmailTo('youhanasheriff2000@gmail.com'); // ← Your email here
 
