@@ -17,6 +17,6 @@ $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('comments')->maxLength(6000);
 
-$pp->sendEmailTo('youhanasheriff2000@gmail.com'); // ← Your email here
+$pp->sendEmailTo('info@snowbirds.in'); // ← Your email here
 
 echo $pp->process($_POST);

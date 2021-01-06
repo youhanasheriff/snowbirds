@@ -7,10 +7,10 @@
 }
 body{
   height: 1000px;
-  background-color:aqua;
+  /* background-color:aqua; */
 }
 .logo a img{
-  padding-top: 0.5em;
+  padding-top: 0.8em; 
 }
 nav{
   position: fixed;
@@ -22,7 +22,7 @@ nav .wrapper{
   position: relative;
   max-width: 1300px;
   padding: 0px 30px;
-  height: 70px;
+  height: 85px;
   line-height: 70px;
   margin: auto;
   display: flex;
