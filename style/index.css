@@ -16,7 +16,7 @@ nav{
   position: fixed;
   z-index: 99;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #ffffff; 
 }
 nav .wrapper{
   position: relative;
@@ -306,12 +306,13 @@ nav input{
 }
 footer{   /*footer position and so on.*/
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   background: #fff;
 }
 .main-content{
   display: flex;
+  border-top: 1px solid #3f3a3a;
 }
 .main-content .box{
   flex-basis: 50%;
@@ -452,7 +453,7 @@ footer{   /*footer position and so on.*/
 @media screen and (max-width: 900px) {
   footer{
     position: relative;
-    bottom: 0px;
+    bottom: 0;
   }
   .main-content{
     flex-wrap: wrap;
@@ -461,4 +462,20 @@ footer{   /*footer position and so on.*/
   .main-content .box{
     margin: 5px 0;
   }
+}
+
+
+/* copyright and creator */
+.copy-creator{
+  border-top: 1px solid #3f3a3a;
+  padding: 15px 0;
+  font-size: 11px;
+  color: #494949;
+  margin-top: 15px;
+  text-align: center;
+}
+.copy-creator a{
+  text-decoration: none;
+  color: #494949;
+  font-weight: bold;
 }
