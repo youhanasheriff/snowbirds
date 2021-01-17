@@ -501,16 +501,24 @@ footer{   /*footer position and so on.*/
 }
 
 .products{
+  display:flex;
+  flex-direction: row;
   height:250px;
   width:250px;
   margin: 0 20px;
   flex: 1;
+  text-align: center;
+  justify-content: space-around;
   background-color: lightcyan;
 }
 
 .products img{
   width: 250px;
   height:250px;
+}
+
+.products .ptext{
+   background-color: lightgreen;
 }
 
 
