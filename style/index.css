@@ -462,6 +462,12 @@ footer{   /*footer position and so on.*/
   .main-content .box{
     margin: 5px 0;
   }
+
+  .featured-product{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 
@@ -479,3 +485,33 @@ footer{   /*footer position and so on.*/
   color: #494949;
   font-weight: bold;
 }
+
+
+
+
+/* --------------------------------- featured products ------------------------ */
+
+
+.featured-product{
+  height:500px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.products{
+  height:250px;
+  width:250px;
+  margin: 0 20px;
+  flex: 1;
+  background-color: lightcyan;
+}
+
+.products img{
+  width: 250px;
+  height:250px;
+}
+
+
+/* --------------xxxxxxxxxxxxxxxxxxxxx------------------- featured products ------------xxxxxxxxxxxxxx------------ */
