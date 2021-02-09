@@ -1,70 +1,71 @@
-.slider{
-	height:650px;
-	width:100%;
-	background-color: #ffffff;
-	overflow:hidden;
+.slider {
+  height: 650px;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-.slides{
-	width:500%;
-	height:650px;
-	animation: slider infinite 20s 2s;
-}
-
-.imgdiv{
-	height:650px;
-	width:20%;
-	float: left;
+.slides {
+  width: 500%;
+  height: 650px;
+  animation: slider infinite 20s 2s;
 }
 
-.imgdiv:nth-child(1){
-	background-image: url('../images/bgslides/img1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgdiv:nth-child(2){
-	background-image: url('../images/bgslides/img2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgdiv:nth-child(3){
-	background-image: url('../images/bgslides/img3.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgdiv:nth-child(4){
-	background-image: url('../images/bgslides/img4.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.imgdiv:nth-child(5){
-	background-image: url('../images/bgslides/img1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+.imgdiv {
+  height: 650px;
+  width: 20%;
+  float: left;
 }
 
-@keyframes slider{
-	12.5%{
-		margin-left: -100%;
-	}
-	25%{
-		margin-left: -100%;
-	}
-	37.5%{
-		margin-left: -200%;
-	}
-	50%{
-		margin-left: -200%;
-	}
-	62.5%{
-		margin-left: -300%;
-	}
-	75%{
-		margin-left: -300%;
-	}
-	87.5%{
-		margin-left: -400%;
-	}
-	100%{
-		margin-left: -400%;
-	}
+.imgdiv:nth-child(1) {
+  background-image: url("../images/bgslides/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgdiv:nth-child(2) {
+  background-image: url("../images/bgslides/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgdiv:nth-child(3) {
+  background-image: url("../images/bgslides/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgdiv:nth-child(4) {
+  background-image: url("../images/bgslides/img4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgdiv:nth-child(5) {
+  background-image: url("../images/bgslides/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes slider {
+  12.5% {
+    margin-left: -100%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  37.5% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  62.5% {
+    margin-left: -300%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  87.5% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
 }

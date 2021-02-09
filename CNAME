@@ -26,3 +26,98 @@ snowbirds.in  <section id="collection" class="section collection">
         </div>
     </section>
 #
+/* --------------------------------- featured products ------------------------ */
+
+.featured-product {
+  padding: 3rem 0;
+}
+
+.collections-product {
+  margin: 3rem 0;
+}
+
+.all-products {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  flex: 0 0 48%;
+  background-color: #9e9b9b5b; /* --light-grey-white-color */
+}
+
+.product-container:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.img-container {
+  width: 25rem;
+  text-align: center;
+}
+
+.product-container img.img-collection-1 {
+  width: 60%;
+}
+
+.product-container img.img-collection-2 {
+  width: 100%;
+}
+
+.collections-data {
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------xxxxxxxxxxxxxxxxxxxxx------------------- featured products ------------xxxxxxxxxxxxxx------------ */
+
+
+
+      <div class="collections-product">
+        <!--1-->
+        <div class="all-products">
+          <!--2-->
+          <div class="product-container">
+            <!--3-->
+            <div class="img-container">
+              <!--4-->
+              <img src="./Secroll comp COPLADN 1.jfif" alt="" class="img-collection-1">
+              <!--5-->
+            </div>
+            <div class="collections-data">
+              <!--6-->
+              <div class="text-data">
+                <!--7-->
+                <span></span>
+                <h3>head</h3>
+                <p>dfgdfb</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="img-container">
+              <img src="./Solenoid Valves 4.jfif" alt="" class="img-collection-2">
+              <!--5.5-->
+            </div>
+            <div class="collections-data">
+              <div class="text-data">
+                <span></span>
+                <h3>head</h3>
+                <p>dfgdfb</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
