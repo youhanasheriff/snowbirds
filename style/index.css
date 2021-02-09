@@ -525,8 +525,13 @@ footer {
 
 .welcome h1 span {
   text-transform: uppercase;
+  font-style:italic;
   position: relative;
   font-weight: bolder;
+  z-index: 1;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .welcome h1 span::before {
@@ -537,4 +542,5 @@ footer {
   background: var(--logo-blue-color);
   border-radius: 1em;
   bottom: 0.2em;
+  z-index:-1;
 }

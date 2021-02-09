@@ -1,3 +1,12 @@
+/* # variables #  */
+
+:root {
+  --white: #ffffff; /* var(--white)   ehite color*/
+  --logo-blue-color: #39427b; /* var(--logo-blue-color) logo blue color */
+  --light-grey-white-color: #9e9b9b; /* light grey white color */
+  --dark-blue-hover: #182470; /* hower dark blue effect */
+}
+
 .categories {
   margin: 70px 0;
 }
@@ -15,24 +24,24 @@
   min-width: 250px;
   margin-bottom: 30px;
   background-color: #9e9b9b5b;
-  height: 450px;
-  border-radius: 5px;
+  height: 470px;
+  border-radius: 3px;
 }
 
 .col-3 img {
   width: 100%;
-  padding: 0 1rem;
-  padding-top: 0.3rem;
+  padding: 0 .5em;
+  padding-top: 0.3em;
   border-radius: 3px;
 }
 
 .col-3 h2 {
-  padding: 1rem;
-  font-size: 1.3rem;
+  padding: .5em;
+  font-size: 1.3em;
 }
 
 .col-3 p {
-  padding: 1rem;
+  padding: .5em;
   text-align: justify;
 }
 
@@ -41,4 +50,39 @@
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.col-4{
+  flex-basis: 25% !important;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 40px;
+  transition: transform 0.5s;
+}
+
+.col-4 img{
+  width: 100%;
+}
+
+.col-4:hover{
+  transform: translateY(-5px);
+}
+
+.btn-more{
+  margin:0 auto 2em;
+  width:100%;
+  text-align:center;
+  padding: 0 auto 2em;
+}
+
+.btn-more h3{
+  color:var(--white);
+  background-color: var(--logo-blue-color);
+}
+
+.btn-more h3:hover{
+  border: 3px solid var(--logo-blue-color);
+  color:black;
+  background: transparent;
+  cursor: pointer;
 }
