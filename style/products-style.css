@@ -78,6 +78,7 @@
 .btn-more h3{
   color:var(--white);
   background-color: var(--logo-blue-color);
+  border: 3px solid white;
 }
 
 .btn-more h3:hover{
