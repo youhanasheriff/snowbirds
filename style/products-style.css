@@ -58,6 +58,21 @@
   min-width: 200px;
   margin-bottom: 40px;
   transition: transform 0.5s;
+  
+}
+
+.col-4 p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.col-4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.col-4 a:hover {
+    color: var(--dark-blue-hover);
 }
 
 .col-4 img{
@@ -66,11 +81,18 @@
 
 .col-4:hover{
   transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow:
+  0 4px 2.2px rgba(0, 0, 0, 0.056),
+  0 10.1px 5.5px rgba(0, 0, 0, 0.08),
+  0 20.6px 11.2px rgba(0, 0, 0, 0.1),
+  0 42.3px 23px rgba(0, 0, 0, 0.124),
+  0 116px 63px rgba(0, 0, 0, 0.18);
 }
 
 .btn-more{
   margin:0 auto 2em;
-  width:100%;
+  width: 0 auto;
   text-align:center;
   padding: 0 auto 2em;
 }

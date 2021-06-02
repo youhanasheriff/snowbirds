@@ -1,0 +1,209 @@
+:root {
+    --white: #ffffff; /* var(--white)   ehite color*/
+    --logo-blue-color: #39427b; /* var(--logo-blue-color) logo blue color */
+    --light-grey-white-color: #9e9b9b; /* light grey white color */
+    --dark-blue-hover: #182470; /* hower dark blue effect */
+}
+
+.product-container{
+    padding: 10px 15px;
+}
+
+.product-bg-container {
+    
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/products-bg/tech-ac.jpeg);
+    background-size: cover;
+}
+ 
+.blackbg{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.blackbg p a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.blackbg p {
+    text-decoration: none;
+    color: var(--white);
+    font-variant: small-caps;
+}
+
+.product-title{
+    position: relative;  
+    left: 20px;
+
+}
+
+.product-title h3 {
+    position: relative;
+    z-index: 1;
+    top: 75px;
+    font-size: 40px;
+    text-align: center;
+    font-variant: small-caps;
+    color: var(--white);
+
+}
+
+.frequent-categories {
+    width: 20%;
+    position: relative;
+}
+
+.frequent-categories p{
+    position: relative;
+    padding-left: 15px;
+}
+
+.frequent-categories p::after{
+    display: inline-block;
+    position:absolute;
+    content: '';
+    height: 3px;
+    width: 25%;
+    background-color: #39427b;
+    bottom: -1px;
+    left: 15px;
+    border-radius: 5px;
+}
+
+.frequent-categories ul{ 
+    display: flex;
+    flex-direction:column;
+    padding-left: 15px;
+}
+
+.frequent-categories ul li {
+    list-style: none;
+    padding: 7px 10px;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow:
+    0 2.3px 43.7px rgba(0, 0, 0, 0.231);
+    overflow: hidden;
+}
+
+.frequent-categories ul li::after{
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    bottom: -17px;
+    background: var(--logo-blue-color);
+    display: block;
+    border-radius: 2px;
+}
+
+.frequent-categories ul li:hover::after{
+    transform: translateY(-10px);
+    transition: transform 0.4s ease;
+}
+
+.frequent-categories ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-page-body{
+    display: flex;
+    flex-direction:row;
+}
+
+.buy-best {
+    position: relative;
+    font-size: 35px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 500px) {
+    .product-page-body{
+        flex-direction:column;
+    }
+    .buy-best {
+        font-size: 20px;
+    }
+    .frequent-categories {
+        padding-left: 15px;
+        width: 100% !important;
+    }
+    .frequent-categories p::after{
+        right: 50%;
+    }
+} 
+
+.products-body {
+    position:relative;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.products-body .card {
+    position: relative;
+    max-width: 300px;
+    height: 250px;
+    background: var(--white);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.products-body .card:hover {
+    height: 420px;
+}
+
+.products-body .card .image-box {
+    position: relative;
+    max-width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 4px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.products-body .card .image-box img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.products-body .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.products-body .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    transition-delay: 0.2s;
+}
+
+@media screen and (max-width: 900px) {
+    .products-body {
+        justify-content: center;
+    }
+    .frequent-categories {
+        width: 50%;
+    }
+} 
